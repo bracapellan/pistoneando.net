@@ -23,7 +23,7 @@ namespace Pistoneando.Models
         [Required]
         [DataType(DataType.ImageUrl)]
         public string ImagenPortada { get; set; }
-        [MaxLength(170, ErrorMessage="Máximo 170 caracteres."), MinLength(50)]
+        [MaxLength(170, ErrorMessage="Máximo 170 caracteres."), MinLength(50, ErrorMessage="Mínimo 50 caracteres.")]
         public string    DescripcionCorta { get; set; }
         public string    DescripcionLarga { get; set; }
         [Required]
